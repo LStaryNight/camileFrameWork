@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			.demo_talbe tr th{
+				background-color: #20a558;
+				color: #fff;
+				font-size: 14px;
+				line-height: 30px;
+				padding: 0px 20px;
+			}
+			.demo_talbe tbody tr{
+				font-size: 12px;
+				line-height: 30px;
+				text-align: center;
+				font-family: "微软雅黑";
+			}
+			.demo_talbe tbody tr:nth-of-type(odd){
+				background: #efefef;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<table cellpadding="0" cellspacing="0" class="demo_talbe" >
+				<thead>
+					<tr>
+						<th><input type="checkbox" name="checkAll" /></th>
+						<th>编号</th>
+						<th>电影名称</th>
+						<th>上映时间</th>
+						<th>演员名称</th>
+						<th>导演名称</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><input type="checkbox" name="checkOne" /></td>
+						<td>001</td>
+						<td>怦然心动</td>
+						<td>2015-12-8</td>
+						<td>杨幂，李易峰，迪丽热巴，张云龙</td>
+						<td>杨幂</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" name="checkOne"  /></td>
+						<td>001</td>
+						<td>怦然心动</td>
+						<td>2015-12-8</td>
+						<td>杨幂，李易峰，迪丽热巴，张云龙</td>
+						<td>杨幂</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" name="checkOne"  /></td>
+						<td>001</td>
+						<td>怦然心动</td>
+						<td>2015-12-8</td>
+						<td>杨幂，李易峰，迪丽热巴，张云龙</td>
+						<td>杨幂</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" name="checkOne"  /></td>
+						<td>001</td>
+						<td>怦然心动</td>
+						<td>2015-12-8</td>
+						<td>杨幂，李易峰，迪丽热巴，张云龙</td>
+						<td>杨幂</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" name="checkOne"  /></td>
+						<td>001</td>
+						<td>怦然心动</td>
+						<td>2015-12-8</td>
+						<td>杨幂，李易峰，迪丽热巴，张云龙</td>
+						<td>杨幂</td>
+					</tr>
+					<tr>
+						<td colspan="6">
+							<button >选择带回</button>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<script>
+			$(function(){
+				var checkAll =$('[name="checkAll"]'),list = $('[name="checkOne"]');
+				checkAll.click(function(){
+					list.prop("checked",checkAll.prop("checked"));
+				});
+				list.click(function(){
+					checkAll.prop("checked",$('[name="checkOne"]:checked').length>=list.length);
+				});
+			});
+		</script>
+	</body>
+</html>

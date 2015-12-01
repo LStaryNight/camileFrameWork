@@ -1,0 +1,168 @@
+/*main*/
+.sec_main{
+	width: 100%;
+	background-image: url(../img/index/back.jpg);
+}
+.sec_title{
+	padding: 5% 0px;
+}
+.sec_title>h1{
+	font-size: 60px;
+	color: #20a558;
+	text-align: center;
+}
+.sec_title>p:nth-of-type(1){
+	font-size: 20px;
+	color: #20A558;
+	text-align: center;
+	line-height: 60px;
+}
+.sec_content{
+	overflow: hidden;
+}
+.sec_content .title1{
+	font-size: 30px;
+	color: #666;
+	text-align: center;
+}
+.sec_content .pluginList{
+	width: 70%;
+	margin: 60px auto;
+}
+.sec_content .pluginList li{
+	border: 1px solid #b2b2b2;
+	width: 20%;
+	float: left;
+	margin-right: 4%;
+	margin-bottom: 3%;
+	background: #fff;
+	border-radius: 5px;
+}
+.sec_content .pluginList li>div:first-child.color1{
+	background: #1fa67a;
+}
+.sec_content .pluginList li>div:first-child.color2{
+	background: #6f5499;
+}
+.sec_content .pluginList li>div:first-child.color3{
+	background: #d35400;
+}
+.sec_content .pluginList li>div:first-child.color4{
+	background: #46bfbd;
+}
+.sec_content .pluginList li>div:first-child.color5{
+	background: #2489c5;
+}
+.sec_content .pluginList li>div:first-child.color6{
+	background: #c47f3e;
+}
+.sec_content .pluginList li>div:first-child.color7{
+	background: #00aeef;
+}
+.sec_content .pluginList li>div:first-child.color8{
+	background: #2b9646;
+}
+.sec_content .pluginList li>div:first-child.color9{
+	background: #f05033;
+}
+.sec_content .pluginList li>div:first-child{
+	width: 100%;
+	height: 100px;
+}
+.sec_content .pluginList li>div:first-child p{
+	color: #fff;
+	font-size: 20px;
+	text-align: center;
+	line-height: 30px;
+}
+.sec_content .pluginList li>div:first-child p.title_logo{
+	font-size: 25px;
+	padding-top: 20px;
+}
+.sec_content .pluginList li>div:nth-of-type(2){
+	text-align: center;
+	padding: 5%;
+	min-height: 200px;
+}
+.sec_content .pluginList li>div:nth-of-type(2) h1 a,.sec_content .pluginList li>div:nth-of-type(2) h1 a:hover{
+	font-size: 18px;
+	color: #20a558;
+	line-height: 30px;
+}
+.sec_content .pluginList li>div:nth-of-type(2) p{
+	line-height: 20px;
+	font-size: 14px;
+}
+.sec_content .sec_smallTitle{
+	width: 50%;
+	margin: 0px auto;
+	border-bottom: 1px solid #20a558;
+	padding: 10px 0px;
+}
+.sec_content .sec_smallTitle p{
+	text-align: center;
+	line-height: 30px;
+	color: #000;
+}
+
+/*layer*/
+.pageMain{
+	background: url(../img/back1.png);
+	background-size: 100% 100%;
+	width: 100%;
+	height: 1000px;
+}
+.layer_title{
+	width: 100%;
+	text-align: center;
+	padding: 3% 0px;
+}
+.layer_title>h1{
+	font-size: 30px;
+	color: #20A558;
+}
+.layer_title>p{
+	font-size: 18px;
+	color: #20a558;
+	line-height: 40px;
+}
+.pageContnet{
+	width: 980px;
+	margin: 0px auto;
+}
+.headSlider{
+	width: 100%;
+	height: 40px;
+	background: #20a558;
+}
+.headSlider p{
+	line-height: 40px;	
+	color: #fff;
+}
+.layerParams{
+	margin: 20px 0px;
+}
+.layerParams>h1{
+	font-size: 18px;
+	font-weight: bold;
+	color: #666;
+	line-height: 30px;
+	border-bottom: 1px dashed #666;
+}
+.layerParams p{
+	margin-top: 20px;
+	font-size: 14px;
+	line-height: 25px;
+	text-indent: 2em;
+}
+.layerParams .layer_yanshi{
+	padding-top: 20px;
+	padding-left: 2em;
+}
+.layerParams .layer_yanshi button{
+	margin: 0px 5px;
+	padding: 10px 15px;
+	border: 0px;
+	color: #fff;
+	border-radius: 5px;
+}

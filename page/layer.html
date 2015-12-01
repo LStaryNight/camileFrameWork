@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<div class="pageMain">
+			<div  class="headSlider">
+				<p  class="pageContnet">
+					<i class="home"></i>
+					首页 > 弹层插件
+				</p>
+			</div>
+			<div class="layer_title">
+				<h1>Layer</h1>
+				<p>非常酷，非常方便的弹层插件</p>
+			</div>
+			<div class="pageContnet">
+				<div class="layerParams">
+					<h1>插件说明</h1>
+					<p>该插件主要采用了angular里面的自定义变量$modal,并通过自定义的一套封装代码而完成。他主要实现的功能为消息提示弹层框，确认消息弹层框，输入消息弹层框，页面弹出框以及页面交互弹出框等。该插件样式美观，可用性强。</p>
+				</div>
+				<div class="layerParams">
+					<h1>实例演示</h1>
+					<div class="layer_yanshi tips">
+						<span>消息提示弹层框:</span>
+						<button class="style_color1" ng-click="getTipOne('这是一个弹出提示框')">风格1</button>
+						<button class="style_color2" ng-click="getTipOne('墨绿色的弹出提示框',{'style':'tip1'})">风格2</button>
+						<button class="style_color3" ng-click="getTipTwo('橙黄色的弹出提示框',{'style':'tip2'})">风格3</button>
+						<button class="style_color4" ng-click="getTipTwo('灰色的弹出提示框',{'style':'tip3'})">风格4</button>
+						<button class="style_color5" ng-click="getTipThree('蓝色的弹出提示框',{'style':'tip4'})">风格5</button>
+					</div>
+					<div class="layer_yanshi">
+						<span>确认消息弹层框:</span>
+						<button class="style_color1" ng-click="showAlertWindow({},{title:false,btn:false,closeBtn:false})">风格1</button>
+						<button class="style_color2" ng-click="showAlertWindow({},{title:true,btn:false,closeBtn:true})">风格2</button>
+						<button class="style_color3" ng-click="showAlertWindow({title : '风格3提示信息',content:'这是新配置的content信息'},{color:'layer_color2'})">风格3</button>
+						<button class="style_color4" ng-click="showAlertWindow({title : '风格4提示信息',content:'这是新配置的content信息'},{color:'layer_color3'})">风格4</button>
+						<button class="style_color5" id="confirm_5" ng-click="showAlertWindow({},{color:'layer_color4'})">风格5</button>
+					</div>
+					<div class="layer_yanshi">
+						<span>输入消息弹层框:</span>
+						<button class="style_color1" ng-click="promotWindow({title:'输入任何口令点击确定'},{color:'layer_color0'})">风格1</button>
+						<button class="style_color3" ng-click="promotWindow({title:'输入任何口令点击确定'},{color:'layer_color2'})">风格3</button>
+					</div>
+					<div class="layer_yanshi">
+						<span>页面弹出框:</span>
+						<button class="style_color2" ng-click="pageWindow({content:'plugins/layer/demo1.html'},{color:'layer_color1',style:'icon1'})">风格1</button>
+						<button class="style_color3" ng-click="pageWindow({content:'plugins/layer/demo1.html'},{color:'layer_color2',style:'icon2',title : false})">风格2</button>
+						<button class="style_color4" >风格3</button>
+					</div>
+				</div>
+				<div class="layerParams">
+					<h1>实例讲解</h1>
+					<div></div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
